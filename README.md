@@ -61,8 +61,6 @@ Globbing with a single asterisk also works one step back from the end of the cha
     
     hub.subscribe("name/*/something", listenerFunction);
 
-Messages that are published with a tag will be sent to all subscribers that are subscribed to a matching tag, or that are subscribed to the base channel without a tag.
-
 Tunguska also supports named event sub-types within each channel. The subscribe
 function takes an optional second parameter for specifying a specific event type
 to listen for. For example,
